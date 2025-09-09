@@ -35,7 +35,7 @@ enum game_state {
 
 void print_usage(void)
 {
-    // Print the usage message message.
+    // Print the usage message.
     char *usage_msg =
         "Usage: langtons_ant [OPTION] [PATTERN]\n"
         "Implement Langton's ant in the terminal using ncurses.\n"
