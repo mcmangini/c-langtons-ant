@@ -204,8 +204,9 @@ int main(int argc, char *argv[])
         printf("Terminal does not support color\n");
         return 1;
     }
+    use_default_colors();
     start_color();
-    init_pair(BLACK, COLOR_WHITE, COLOR_BLACK);
+    init_pair(BLACK, -1, -1);
     init_pair(WHITE, COLOR_BLACK, COLOR_WHITE);
     init_pair(BLUE, COLOR_BLACK, COLOR_BLUE);
     init_pair(GREEN, COLOR_BLACK, COLOR_GREEN);
